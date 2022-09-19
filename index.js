@@ -25,7 +25,7 @@ export default () => {
     const physicsIds = [];
     let greenhill;
     (async () => {
-        const u = `${baseUrl}/assets/greenhill4.glb`;
+        const u = `${baseUrl}/assets/map.glb`;
         greenhill = await new Promise((accept, reject) => {
             const {gltfLoader} = useLoaders();
             gltfLoader.load(u, accept, function onprogress() {}, reject);
